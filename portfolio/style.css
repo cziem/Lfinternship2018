@@ -1,8 +1,8 @@
 
 .main
 {
-    width: 70%;
-    margin: 10% auto;
+    width: 65%;
+    margin: 5% auto;
     display: flex;
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.562);
 }
@@ -103,7 +103,7 @@
 {
     float: right;
     position: relative;
-    right: -50px;
+    right: -28px;
     top: 12px;
     color: #646464;
     text-transform: uppercase;
