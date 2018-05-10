@@ -345,3 +345,29 @@ article .image {
   position: absolute;
   bottom: -783px;
 }
+
+/* styling the footer */
+
+footer
+{
+  height: 300px;
+  text-align: center;
+  color: #5582ab;
+  opacity: 0.8;
+  margin-top: 4px;
+  padding-top: 10px;
+  background-color: #062544;
+  display: grid;
+  place-content: center;
+}
+
+footer p
+{
+  font-size: 1.21rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer strong
+{
+  color: #99cbff;
+}
