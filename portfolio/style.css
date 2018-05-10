@@ -12,7 +12,7 @@
     background: url('img/cloud.jpg') center center no-repeat;
     background-size: cover;
     height: 500px;
-    color: #fff;
+    color: #c5c5c5;
     text-align: center;
 }
 
@@ -25,13 +25,13 @@
 
 .logIcon
 {
-    border: 2px solid #eeeeee;
+    border: 2px solid #c5c5c5;
     border-radius: 1px;
     height: 30px;
     width: 30px;
     position: relative;
     top: 40px;
-    left: 42%;
+    left: 41%;
 }
 
 .logIcon:before
@@ -41,7 +41,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #eeeeee;
+    background-color: #c5c5c5;
     position: absolute;
     top: -9px;
     left: 25%;
@@ -53,7 +53,7 @@
     height: 60px;
     position: relative;
     top: 20%;
-    left: 40%;
+    left: 43%;
     padding: 5px 0;
 }
 
@@ -61,7 +61,7 @@
 {
     width: 25px;
     height: 25px;
-    border: 2px solid #eeeeee;
+    border: 2px solid #c5c5c5;
     border-radius: 50%;
     display: grid;
     place-content: center;
@@ -71,8 +71,8 @@
 {
     display: block;
     position: relative;
-    top: 4px;
-    right: 11px;
+    top: 5px;
+    right: 15px;
 }
 
 .name
@@ -81,6 +81,16 @@
     top: 140px;
 }
 
+.name h3
+{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.name span
+{
+    font-size: small;
+}
 
 
 
