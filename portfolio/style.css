@@ -92,39 +92,64 @@
     font-size: small;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mainContainer
 {
     width: 70%;
+    background-color: #fcfcfc;
+}
+
+.logout
+{
+    float: right;
+    padding: 5px;
+
+}
+
+.contentWrap
+{
+    display: flex;
+    position: relative;
+    top: 34%;
+    left: 30%;
+}
+
+.contentWrap .icon
+{
+    font-size: 2rem;
+    color: #646464
+}
+
+/* msg box and add box*/
+.msgBox,
+.addBox
+{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #646464;
+    display: grid;
+    place-content: center;
 }
 
 .imgWrap
 {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
+    padding: 0 30px;
+    position: relative;
+    top: -57px;
+    border-radius: 50%;
+    clip-path: circle();
 }
 
 .imgWrap img
 {
     width: 100%;
     height: 100%;
+}
+
+.about
+{
+    position: relative;
+    top: 80%;
 }
