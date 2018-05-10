@@ -1,0 +1,120 @@
+
+.main
+{
+    width: 70%;
+    margin: 10% auto;
+    display: flex;
+}
+
+.left
+{
+    width: 210px;
+    background: url('img/cloud.jpg') center center no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay
+{
+    height: 500px;
+    width: 210px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.logIcon
+{
+    border: 2px solid #eeeeee;
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 40px;
+    left: 42%;
+}
+
+.logIcon:before
+{
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    position: absolute;
+    top: -9px;
+    left: 25%;
+}
+
+.but
+{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    padding: 5px 0;
+}
+
+.but .num
+{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #eeeeee;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.but .txt
+{
+    display: block;
+    position: relative;
+    top: 4px;
+    right: 11px;
+}
+
+.name
+{
+    position: relative;
+    top: 140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainContainer
+{
+    width: 70%;
+}
+
+.imgWrap
+{
+    width: 60px;
+    height: 60px;
+}
+
+.imgWrap img
+{
+    width: 100%;
+    height: 100%;
+}
