@@ -1,0 +1,347 @@
+/*css syntax */
+/* head section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+body,
+div,
+section,
+article,
+sidebar,
+nav,
+footer {
+  display: block;
+}
+
+header img {
+  border-radius: 100%;
+  width: 100px;
+}
+
+/* Updated */
+#searchInput input {
+  border: none;
+  color: #4b4b4b;
+  padding: 7px;
+  border-radius: 100px;
+  margin-left: 1000px;
+  padding: 7px;
+  margin-bottom: 30px;
+  width: 186px;
+  border: 2px solid #50ba45;
+}
+
+#searchInput input:active {
+  outline-color: none;
+}
+
+#searchInput {
+  float: right;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+header nav {
+  background: #0a0909;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+
+nav ul a li {
+    padding: 16px 16px;
+    transition: margin-right 250ms ease-in-out;
+    font-size: 20px;
+}
+
+nav ul a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+/* nav ul a li:nth-child(2):hover {
+    background-color: #ba45a1;
+} */
+
+nav ul a li:hover {
+    background-color: #50ba45;
+    margin-right: 4px;
+}
+
+header ul li {
+  display: inline;
+}
+
+header ul li a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: background-color 250ms ease-in-out;
+  padding: 5px 12px;
+}
+
+header ul li a:hover {
+  background: #ca8300;
+}
+
+header ul li a:visited {
+  color: #f7f7f7;
+}
+
+#menu li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+sidebar {
+  color: #f8f8f8;
+  font-size: 18px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 1);
+  background-color: #0b0d0f;
+  width: 178px;
+  height: 550px;
+}
+
+#menu a li {
+  list-style: none;
+  line-height: 30px;
+  padding: 2px 10px;
+  transition: margin 250ms ease-in-out;
+}
+
+#menu a li:hover {
+    background-color: #ca8300;
+    margin-left: 4px;
+    color: #fff;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #dadada;
+}
+
+#main-section {
+  display: flex;
+}
+
+sidebar h2 {
+  color: #f7f7f7;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+.dashboard {
+  height: 48px;
+  margin-top: -2px;
+  width: 101%;
+  background-color: #50ba45;
+  text-align: center;
+}
+
+.span:before {
+  content: "(";
+}
+
+.span:after {
+  content: ")";
+}
+
+article {
+  border: 1px solid #cfcfcf;
+  overflow: hidden;
+  width: 85%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: #1b1b1b;
+}
+.contentHeader h1
+{
+  text-align: center;
+  text-shadow: 3px 3px 2px #000;
+  color: #e2e2e2;
+  font-size: 30px;
+  padding-top: 10px;
+  float: left;
+  position: relative;
+  left: 30%;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.contentHeader h1:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #eefbfd;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.contentHeader h1:hover:after {
+  transform: scaleX(1);
+}
+
+/* Animate the header text */
+
+article .image {
+  background: url('img/naijaSports.jpg') center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 95%;
+  margin: 15px auto 15px;
+  box-shadow: 0 0 5px 3px rgba(170, 170, 170, 0.623);
+  clear: both;
+}
+
+/* styling main content */
+
+#article-content {
+  overflow: visible;
+  width: 100%;
+}
+
+#people,
+#economy,
+#culture
+{
+  display: flex;
+}
+
+.people,
+.economy,
+.culture
+{
+  text-align: justify;
+  padding: 12px;
+}
+
+.people h2
+{
+  padding-left: 8px;
+  padding-bottom: 12px;
+  color: #50ba45;
+  font-size: 150%;
+}
+/* 
+.people h2::after
+{
+  display: block;
+  content: '';
+  border-bottom: 3px solid #eefbfd;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.people .center:hover::after
+{
+  transform: scaleX(1);
+}
+
+.people .left:hover::after
+{
+  transform-origin: 100% 50%;
+}
+
+.people .right:hover::after
+{
+  transform-origin: 0 50%;
+} */
+
+.people h2::before
+{
+  display: block;
+  content: '';
+  border: 1px solid #d7d8d7;
+  width:24px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.txtContent
+{
+  padding-top: 10px;
+  color: #e0e0e0;
+  border-right: 1px dotted #dadada;
+  padding-right: 8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: box-shadow 250ms ease-in-out,
+              transform 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.txtContent p {
+  padding: 5px;
+}
+
+.last-p {
+  border: none;
+}
+
+.txtContent:hover {
+  box-shadow: 0 0 10px 2px rgb(204, 204, 204);
+  transform: scale(1.02);
+}
+
+.more
+{
+  background: #ca8300;
+  color: #eefbfd;
+  padding: 8px;
+  display: block;
+  width: 115px;
+  border-radius: 3px;
+  border: 1px solid #724a00;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  transition: outline-offset 250ms ease-in-out;
+}
+
+.more:hover
+{
+  cursor: pointer;
+  outline: 1px solid white;
+  outline-offset: 3px;
+}
+
+.economy h2 {
+  padding-left: 8px;
+  padding-bottom: 12px;
+  color: #50ba45;
+  font-size: 150%;
+}
+
+.culture h2 {
+  padding-left: 8px;
+  padding-bottom: 12px;
+  color: #50ba45;
+  font-size: 150%;
+}
+
+.economy h2::before
+{
+  display: block;
+  content: '';
+  border: 1px solid #d7d8d7;
+  width:24px;
+  position: absolute;
+  bottom: -350px;
+}
+
+.culture h2::before
+{
+  display: block;
+  content: '';
+  border: 1px solid #d7d8d7;
+  width:24px;
+  position: absolute;
+  bottom: -765px;
+}
