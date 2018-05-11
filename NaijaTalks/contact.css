@@ -85,6 +85,10 @@ textarea:focus {
     color: #444444;
 }
 
+textarea {
+    color: #444444;
+}
+
 button {
     background: #217433;
     color: #fff;
