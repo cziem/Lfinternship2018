@@ -66,13 +66,19 @@
 }
 
 /* discover me */
-button:hover
+.discover button:hover:before
 {
-    transform: scale(1.1);
-    background-color: #e99518;
+    width: 100%;
 }
 
 .discover button:focus
 {
     outline: none;
+}
+
+/* animate left panel */
+
+@keyframes panelBounce
+{
+
 }
