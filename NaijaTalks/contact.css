@@ -15,7 +15,7 @@ body {
 .main
 {
     width: 75%;
-    margin: 4rem auto;
+    margin: 2.5rem auto;
     display: flex;
     background: url('img/naijaprizes_logo.png') center center no-repeat;
     background-size: cover;
@@ -35,4 +35,61 @@ body {
     color: #444444;
     line-height: 1.5rem;
     text-align: justify;
+}
+
+.forms {
+    padding: .3rem 0;
+}
+
+.form-group {
+    padding-top: 1.1rem;
+}
+
+.forms label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #217433;
+    padding-bottom: .2rem;
+}
+
+.forms label span { /* remove uppercase from span text */
+    text-transform: lowercase;
+    color: #c03939;
+}
+
+/* inputs */
+input,
+select,
+textarea {
+    width: 20rem;
+    background-color: #fff;
+    border: 1px solid #387e4798;
+    outline-offset: 0;
+    padding: .5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: #50ba45;
+}
+
+.form-group textarea {
+    width: 20rem;
+    height: 6rem;
+}
+
+option {
+    color: #444444;
+}
+
+button {
+    background: #217433;
+    color: #fff;
+    padding: .6rem;
+    border: none;
+    cursor: pointer;
+    width: 5rem;
+    font-weight: bold;
 }
