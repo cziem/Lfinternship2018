@@ -111,3 +111,31 @@
 .logIcon:hover:before {
   animation: headBounce 1000ms;
 }
+
+/* but RRP */
+.but:hover .num {
+  transform: scale(1.2);
+  border: 2px solid #071921d9;
+  background-color: #071921d9;
+  cursor: pointer;
+  color: #fff;
+}
+
+@keyframes shifter {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(-3px);
+  }
+}
+
+.but:hover .txt {
+    animation: shifter 500ms;
+}
