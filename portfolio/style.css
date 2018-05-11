@@ -15,6 +15,7 @@
     height: 500px;
     color: #c5c5c5;
     text-align: center;
+    /* transition: transform 250ms ease-in-out; */
 }
 
 .overlay
@@ -147,7 +148,7 @@
     border: 2px solid #646464;
     display: grid;
     place-content: center;
-    transition: transform 250ms ease-in-out,
+    transition: transform 250ms cubic-bezier(1,-1.05, 0, 1.86),
                 border 250ms ease-in-out;
 }
 
