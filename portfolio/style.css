@@ -201,6 +201,40 @@
     height: 100%;
 }
 
+/* img overlay */
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6aa3c0;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 300ms ease;
+    opacity: .7;
+}
+
+.imgWrap:hover .overlay
+{
+    transform: scale(1)
+}
+
+.text
+{
+    color: #fcfcfc;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .about
 {
     position: relative;
