@@ -33,6 +33,7 @@
     position: relative;
     top: 40px;
     left: 41%;
+    transition: border 250ms ease-in;
 }
 
 .logIcon:before
