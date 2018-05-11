@@ -80,5 +80,21 @@
 
 @keyframes panelBounce
 {
+    0%, 20%, 60%, 100%
+    {
+        transform: translateY(0);
+    }
+    40%
+    {
+        transform: translateY(-5px);
+    }
+    80%
+    {
+        transform: translateY(-3px);
+    }
+}
 
+.left:hover
+{
+    animation: panelBounce 500ms;
 }
