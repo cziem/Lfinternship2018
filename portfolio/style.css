@@ -1,231 +1,216 @@
-
-.main
-{
-    width: 65%;
-    margin: 5% auto;
-    display: flex;
-    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.562);
+.main {
+  width: 65%;
+  margin: 5% auto;
+  display: flex;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.562);
 }
 
-.left
-{
-    width: 210px;
-    background: url('img/cloud.jpg') center center no-repeat;
-    background-size: cover;
-    height: 500px;
-    color: #c5c5c5;
-    text-align: center;
+.left {
+  width: 210px;
+  background: url("img/cloud.jpg") center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: #c5c5c5;
+  text-align: center;
 }
 
-.overlay
-{
-    height: 500px;
-    width: 210px;
-    background-color: rgba(0, 0, 0, 0.562);
+.overlay {
+  height: 500px;
+  width: 210px;
+  background-color: rgba(0, 0, 0, 0.562);
 }
 
-.logIcon
-{
-    border: 2px solid #c5c5c5;
-    border-radius: 1px;
-    height: 30px;
-    width: 30px;
-    position: relative;
-    top: 40px;
-    left: 41%;
-    transition: border 250ms ease-in;
+.logIcon {
+  border: 2px solid #c5c5c5;
+  border-radius: 1px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 40px;
+  left: 41%;
+  transition: border 250ms ease-in;
 }
 
-.logIcon:before
-{
-    display: block;
-    content: '';
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #c5c5c5;
-    position: absolute;
-    top: -9px;
-    left: 25%;
+.logIcon:before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+  position: absolute;
+  top: -9px;
+  left: 25%;
 }
 
-.but
-{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: 20%;
-    left: 43%;
-    padding: 5px 0;
-    cursor: pointer;
+.but {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 20%;
+  left: 43%;
+  padding: 5px 0;
+  cursor: pointer;
 }
 
-.but .num
-{
-    transition: transform 500ms cubic-bezier(1,-1.05, 0, 1.86);
-    transition-delay: 350ms;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #c5c5c5;
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
+.but .num {
+  transition: transform 500ms cubic-bezier(1, -1.05, 0, 1.86);
+  transition-delay: 350ms;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
 }
 
-.but .txt
-{
-    display: block;
-    position: relative;
-    top: 5px;
-    right: 15px;
+.but .txt {
+  display: block;
+  position: relative;
+  top: 5px;
+  right: 15px;
 }
 
-.name
-{
-    position: relative;
-    top: 140px;
+.name {
+  position: relative;
+  top: 140px;
 }
 
-.name h3
-{
-    font-size: 1.5rem;
-    margin-bottom: 0;
+.name h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-.name span
-{
-    font-size: small;
+.name span {
+  font-size: small;
 }
 
-.mainContainer
-{
-    width: 70%;
-    background-color: #fcfcfc;
+.github {
+  overflow: hidden;
+  margin-top: 5px;
+  height: 38px;
+  width: 180px;
+  position: relative;
+  left: 0;
 }
 
-.logout
-{
-    float: right;
-    position: relative;
-    right: -28px;
-    top: 12px;
-    color: #646464;
-    text-transform: uppercase;
-    font-size: small;
-    cursor: pointer;
-    border-bottom: .1rem solid #646464;
-    transition: color 250ms ease-in-out,
-                border-bottom 300ms ease-in-out,
-                margin-right 250ms ease-in-out;
+.github .icon {
+  font-size: 30px;
+  position: absolute;
+  right: 180px;
+  cursor: pointer;
 }
 
-
-
-.ion-log-out
-{
-    transition: transform 400ms ease-in-out;
-    display: inline-block;
+/* Main Container */
+.mainContainer {
+  width: 70%;
+  background-color: #fcfcfc;
 }
 
-.contentWrap
-{
-    display: flex;
-    position: relative;
-    top: 34%;
-    left: 30%;
+.logout {
+  float: right;
+  position: relative;
+  right: -28px;
+  top: 12px;
+  color: #646464;
+  text-transform: uppercase;
+  font-size: small;
+  cursor: pointer;
+  border-bottom: 0.1rem solid #646464;
+  transition: color 250ms ease-in-out, border-bottom 300ms ease-in-out,
+    margin-right 250ms ease-in-out;
 }
 
-.contentWrap .icon
-{
-    font-size: 2rem;
-    color: #646464
+.ion-log-out {
+  transition: transform 400ms ease-in-out;
+  display: inline-block;
+}
+
+.contentWrap {
+  display: flex;
+  position: relative;
+  top: 34%;
+  left: 30%;
+}
+
+.contentWrap .icon {
+  font-size: 2rem;
+  color: #646464;
 }
 
 /* msg box and add box*/
 .msgBox,
-.addBox
-{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 2px solid #646464;
-    display: grid;
-    place-content: center;
-    transition: transform 250ms cubic-bezier(1,-1.05, 0, 1.86),
-                border 250ms ease-in-out;
+.addBox {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #646464;
+  display: grid;
+  place-content: center;
+  transition: transform 250ms cubic-bezier(1, -1.05, 0, 1.86),
+    border 250ms ease-in-out;
 }
 
-
-.contentWrap .icon
-{
-    display: inline-block;
-    transition: color 500ms ease-in-out,
-                transform 500ms ease-in-out;
+.contentWrap .icon {
+  display: inline-block;
+  transition: color 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
-.imgWrap
-{
-    width: 150px;
-    height: 150px;
-    padding: 0 30px;
-    position: relative;
-    top: -57px;
-    border-radius: 50%;
-    clip-path: circle();
+.imgWrap {
+  width: 150px;
+  height: 150px;
+  padding: 0 30px;
+  position: relative;
+  top: -57px;
+  border-radius: 50%;
+  clip-path: circle();
 }
 
-.imgWrap img
-{
-    width: 100%;
-    height: 100%;
+.imgWrap img {
+  width: 100%;
+  height: 100%;
 }
 
-.about
-{
-    position: relative;
-    top: 24%;
-    left: 24%;
-    width: 65%;
-    text-align: center;
-    font-size: .9rem;
-    color: #646464;
-    line-height: 21px;
+.about {
+  position: relative;
+  top: 24%;
+  left: 24%;
+  width: 65%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #646464;
+  line-height: 21px;
 }
 
-.about a
-{
-    text-decoration: none;
-    color: #e99518;
+.about a {
+  text-decoration: none;
+  color: #e99518;
 }
 
-.discover
-{
-    position: relative;
-    top: 160px;
-    left: 43%;
+.discover {
+  position: relative;
+  top: 160px;
+  left: 43%;
 }
 
-.discover button
-{
-    background-color: #111010;
-    color: #fcfcfc;
-    border: none;
-    padding: 14px 20px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
+.discover button {
+  background-color: #111010;
+  color: #fcfcfc;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.discover button:before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 46px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    transition: all 1.5s ease;
+.discover button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 1.5s ease;
 }
-
