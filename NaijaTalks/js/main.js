@@ -141,6 +141,22 @@ let cinema =
       : "you are underaged with no permission";
 
 alert(cinema);
+
+let age = +prompt("How old are you?");
+let permit;
+let cinema =
+  age > 18 ?
+  "Access Granted." :
+  permit = prompt("Grant Permission", "true or false");
+
+cinema = permit === 'true' ?
+    "Access Granted" :
+    permit === "false" && age < 18 ?
+  "Access Denied" :
+  "you are under-aged with no permission";
+
+alert(cinema);
+
 */
 
 // ARRAYS
@@ -151,4 +167,3 @@ alert(cinema);
 //   let eachDay = weekDays[i];
 //   document.write(eachDay + '<br>');
 // }
-
