@@ -145,10 +145,10 @@ alert(cinema);
 
 // ARRAYS
 
-const weekDays = ['Monday', 'Tuesday', 'Wednessday', 'Thursday', 'Friday', 'Saturday', 'Friday'];
+// const weekDays = ['Monday', 'Tuesday', 'Wednessday', 'Thursday', 'Friday', 'Saturday', 'Friday'];
 
-for (let i = 0; i < weekDays.length; i++) {
-  let eachDay = weekDays[i];
-  document.write(eachDay + '<br>');
-}
+// for (let i = 0; i < weekDays.length; i++) {
+//   let eachDay = weekDays[i];
+//   document.write(eachDay + '<br>');
+// }
 
