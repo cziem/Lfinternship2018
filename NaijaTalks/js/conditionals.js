@@ -2,7 +2,7 @@
 
 var balance = 5000.0;
 
-var isActive = false;
+var isActive = true;
 
 var acctName = "westBanks";
 
@@ -51,4 +51,30 @@ if (usrGrp <= 0) {
   alert("You are a quartet");
 } else if (usrGrp > 4) {
   alert("This is a large group");
+}
+
+let isActive = false;
+let username = "fayvor";
+let name = prompt("Enter username");
+let amountDeposit = +prompt("Enter deposit amount");
+let totalBalance = 0;
+totalBalance += amountDeposit;
+
+if (name === username) {
+  if (totalBalance) {
+    isActive = true;
+    if (isActive) {
+      alert(
+        `${name} your account balance is ${totalBalance.toLocaleString(
+          "en-US"
+        )}`
+      );
+    }
+  } else {
+    alert(
+      `${name} your acount is currently in-active! Please contact your financial advisor!`
+    );
+  }
+} else {
+  alert(`${name} you are not a registerd customer.`);
 }
