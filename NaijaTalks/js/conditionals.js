@@ -65,7 +65,7 @@ if (name === username) {
     isActive = true;
     if (isActive) {
       alert(
-        `${name} your account balance is ${totalBalance.toLocaleString(
+        `${name} your account balance is N${totalBalance.toLocaleString(
           "en-US"
         )}`
       );
