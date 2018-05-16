@@ -80,37 +80,37 @@ if (name === username) {
 }
 
 
-  var month = prompt('Enter month');
+var month = prompt('Enter month');
 
-  switch (month) {
-    case 'january':
-      alert('The year has just begun');
-      break;
-    case 'december':
-      alert('Christmas is around the corner');
-      break;
-    case 'june':
-      alert('Just rounding up the first quarter of the year');
-      break;
-    case 'february':
-      alert('Fools are increasing');
-      break;
-    case 'march':
-    case  'april':
-      alert('Marching forward');
-      break;
-    case 'october', 'november':
-      alert('Ember month fever');
-      break;
-    case 'september':
-      alert('School has resumed');
-      break;
-    case 'may':
-    case 'august':
-    case 'july':
-      alert('Are you on break yet?');
-      break;
-    default:
-      alert('This month is execptional.');
-      break;
-  }
+switch (month) {
+  case 'january':
+    alert('The year has just begun');
+    break;
+  case 'december':
+    alert('Christmas is around the corner');
+    break;
+  case 'june':
+    alert('Just rounding up the first quarter of the year');
+    break;
+  case 'february':
+    alert('Fools are increasing');
+    break;
+  case 'march':
+  case  'april':
+    alert('Marching forward');
+    break;
+  case 'october', 'november':
+    alert('Ember month fever');
+    break;
+  case 'september':
+    alert('School has resumed');
+    break;
+  case 'may':
+  case 'august':
+  case 'july':
+    alert('Are you on break yet?');
+    break;
+  default:
+    alert('This month is execptional.');
+    break;
+}
