@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.backImage {
+  background-image: url("../img/bkg.jpg");
+  background-size: cover;
+  display: block;
+  background-position: center center;
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  /* filter: blur(0px);
+  -webkit-filter: blur(0px); */
+}
+
+.content {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  top: 10rem;
+  left: 0;
+  position: fixed;
+  margin-left: 264px;
+  margin-right: 20px;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+  width: 780px;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  position: relative;
+  top: -121px;
+  color: #02121e;
+  font-size: 150px;
+}
+
+h1 .re {
+  color: #bdbdbd;
+}
+
+form {
+  position: relative;
+  top: 24px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  display: block;
+  font-size: 30px;
+  color: #e09d20;
+  position: relative;
+  top: -100px;
+}
+
+input {
+  display: block;
+  width: 400px;
+  padding: 1rem;
+  background-color: #1d3e5780;
+  border: none;
+  border-radius: 3px;
+  margin-left: 80px;
+  color: #f9f9f9;
+}
+
+button {
+  position: relative;
+  left: 226px;
+  top: -45px;
+  padding: 0.8rem;
+  width: 241px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    background-color: #02121e;
+    color: #fff;
+    letter-spacing: 2px;
+}
