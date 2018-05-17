@@ -96,3 +96,22 @@ button:hover {
     color: #fff;
     letter-spacing: 2px;
 }
+
+footer {
+    position: fixed;
+    bottom: 4px;
+    color: #a6a199;
+    z-index: 100;
+    right: 10px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: small;
+}
+
+footer span {
+    letter-spacing: 2px;
+    /* color: #02121e; */
+    font-weight: bolder;
+    font-size: 18px;
+    color: #020c14;
+    cursor: pointer;
+}
