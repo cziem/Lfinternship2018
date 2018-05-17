@@ -203,7 +203,7 @@ let sortArr = [1, 4, 2, 5, 7, 8, 9, 20, 23, 12, 29, 26, 15, 94];
 let sorted = sortArr.sort((a, b) => b -a);
 alert(sorted);
 
-let name = ['Bentely', 'Continental', 'Baddmos'];
+name = ['Bentely', 'Continental', 'Baddmos'];
 let company = ['GozzTech', 'Rectify', 'osz'];
 let fullLog = name.concat(company);
 // fullLog.sort.apply((a, b) => a - b); // Assignment... make this sort
