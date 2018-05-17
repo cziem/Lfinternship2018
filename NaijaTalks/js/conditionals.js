@@ -195,3 +195,30 @@ arr[4].push('git');
 arr[4].push('projects');
 
 alert(arr[4]);
+
+
+let array = ['home', 'run', 'developer', 'system', 1, 3, 4, 6];
+alert(array.reverse());
+
+let sortArr = [1, 4, 2, 5, 7, 8, 9, 20, 23, 12, 29, 26, 15, 94];
+let sorted = sortArr.sort((a, b) => b -a);
+alert(sorted);
+
+name = ['Bentely', 'Continental', 'Baddmos'];
+let company = ['GozzTech', 'Rectify', 'osz'];
+let fullLog = name.concat(company);
+// fullLog.sort.apply((a, b) => a - b); // Assignment... make this sort
+// alert(fullLog);
+
+function doSomething(arr) {
+    alert('The database has the following: ' + arr);
+    var usrName = prompt('Enter username');
+    if (arr.indexOf(usrName) !== -1) {
+        const numVal = arr.indexOf(usrName);
+        const retArrRem = arr.splice(numVal, 1);
+        alert('The deleted item is: ' + retArrRem);
+        alert('The current database is: ' + arr);
+    }
+}
+
+doSomething(fullLog);
