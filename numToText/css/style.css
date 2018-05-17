@@ -72,6 +72,11 @@ input {
   border-radius: 3px;
   margin-left: 80px;
   color: #f9f9f9;
+  transition: background-color 250ms ease;
+}
+
+input:focus {
+    background-color: #02121e;
 }
 
 button {
