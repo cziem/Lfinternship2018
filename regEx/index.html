@@ -56,6 +56,12 @@
             font-size: 1.2rem;
         }
 
+        .failed {
+            background-color: #faa4a4;
+            color: #f8f8f8;
+            border: none;
+        }
+
         .footerInfo {
             text-align: center;
             color: #072d3f;
@@ -106,12 +112,14 @@
 
         function submitMail(e) {
             e.preventDefault();
-            // e.stopPropagation();
 
             if (email.value.match(regEx)) {
                 showMsg.textContent = passMsg;
+                email.value = '';
+                email.className = '';
             } else {
                 showMsg.textContent = failMsg;
+                email.className = 'failed';
             }
         }
 
