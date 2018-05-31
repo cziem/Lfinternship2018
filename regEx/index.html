@@ -50,6 +50,16 @@
             color: #f8f8f8;
             margin-left: 1.1rem;
         }
+
+        .showMsg {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .footerInfo {
+            text-align: center;
+            color: #072d3f;
+        }
     </style>
 </head>
 <body>
@@ -57,9 +67,12 @@
         <!-- <label for="email">Enter Email:</label> -->
         <input type="text" id="email" placeholder="abe@mailer,com">
         <button type="button" id="submit">Submit</button>
+        <div id="showMsg" class="showMsg"></div>
     </form>
 
-    <div id="showMsg"></div>
+    <div class="footerInfo">
+        built with love by <strong>Fay Vor</strong> Tech&copy;
+    </div>
 
     <script>
         /*
@@ -88,7 +101,7 @@
         let submit = document.getElementById('submit');
         let regEx = /[,]/g;
         let passMsg = 'Validation Successful';
-        let failMsg = 'Your email is not in the correct form! Make sure you use "," instead of a "."';
+        let failMsg = 'Your email is not in the correct form!' + '\n' + 'Make sure you use "," instead of a "."';
         let showMsg = document.getElementById('showMsg');
 
         function submitMail(e) {
