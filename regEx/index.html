@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RegEx</title>
+
+    <style>
+        body {
+            background-color: #0c6188;
+            color: #f8f8f8;
+        }
+        form {
+            width: 65%;
+            margin: 7rem auto;
+            text-align: center;
+            border-radius: .58rem;
+            border: 1px solid #064d6e;
+            height: 25rem;
+            box-sizing: content-box;
+        }
+
+        input[type='text'] {
+            padding: 1rem;
+            margin-top: 12%;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <!-- <label for="email">Enter Email:</label> -->
+        <input type="text" id="email" placeholder="abe@mailer,com">
+        <button type="button" id="submit">Submit</button>
+    </form>
+
+    <div id="showMsg"></div>
+
+    <script>
+        /*
+        var str = 'Visit W3Schools';
+        var regXStrn = str.search(/W3schools/);
+        console.log(regXStrn);
+
+        var replStr = 'Visit Microsoft Microsoft';
+        var repstr = replStr.replace(/microsoft/ig, 'LearnFactory');
+        console.log(repstr);
+
+        var alpha = alphaNum.replace(/[a|e]/g, 'j');
+        console.log(alpha);
+        */
+        // Brackets are used to find a range of characters:
+
+        /*
+        # Assignment
+
+        # Using an input element to accept an email from a user
+        # Use regexp to validate and show if it's a valid email or not
+        # For a twist make sure it displayes as invalid when you use.com and not, com
+        */
+
+        let email = document.getElementById('email');
+        let submit = document.getElementById('submit');
+        let regEx = /[,]/g;
+        let passMsg = 'Validation Successful';
+        let failMsg = 'Your email is not in the correct form! Make sure you use "," instead of a "."';
+        let showMsg = document.getElementById('showMsg');
+
+        function submitMail(e) {
+            e.preventDefault();
+            // e.stopPropagation();
+
+            if (email.value.match(regEx)) {
+                showMsg.textContent = passMsg;
+            } else {
+                showMsg.textContent = failMsg;
+            }
+        }
+
+        submit.addEventListener('click', submitMail);
+    </script>
+</body>
+</html>
